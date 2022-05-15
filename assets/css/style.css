@@ -28,27 +28,10 @@
   color: white;
 }
 
-.nav-color {
-  background-color: #FFB2A6;
-}
-
-.nav-logo {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.main {
-  background-color: #ffeed8;
-}
-.main .btn-color {
-  background-color: #131012;
-}
-
-.footer-container {
-  background-color: black;
-}
-.footer-container .listas {
-  list-style: none;
-  color: white;
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-color {
@@ -80,6 +63,35 @@
   box-sizing: border-box;
 }
 
+.nav-color {
+  background-color: #FFB2A6;
+}
+
+.nav-logo {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.main {
+  background-color: #ffeed8;
+}
+.main .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .foto-container {
   display: flex;
   flex: auto;
@@ -91,8 +103,8 @@
 .foto-container .foto-inicio {
   width: 80%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .foto-container .foto-inicio .foto-img {
@@ -107,8 +119,8 @@
     margin-bottom: 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
   }
   .foto-inicio .foto {
     display: flex;
@@ -131,8 +143,8 @@
   .foto-container .foto-inicio {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
   }
   .foto-container .foto-inicio .foto-img {
     width: 199px;
@@ -168,10 +180,14 @@
   color: white;
 }
 
-.contenido-pestanas {
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+/*------- CONTENIDO PESTANAS-------*/
+.contenido-pestanas {
   margin-top: 30px;
 }
 .contenido-pestanas .titulo-pestanas {
@@ -226,8 +242,8 @@
 @media only screen and (min-width: 360px) and (max-width: 767px) {
   .contenido-pestanas {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
     font-size: 18px;
@@ -241,8 +257,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .contenido-pestanas {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
     font-size: 23px;
@@ -281,10 +297,14 @@
   color: white;
 }
 
-.contenido-depilacion {
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+}
+
+/*--------- CONTENIDO DEPILACION---------*/
+.contenido-depilacion {
   margin-top: 30px;
 }
 .contenido-depilacion .titulo-depilacion {
@@ -320,8 +340,8 @@
 @media only screen and (min-width: 360px) and (max-width: 767px) {
   .contenido-depilacion {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
     font-size: 18px;
@@ -335,8 +355,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .contenido-depilacion {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
     font-size: 23px;
@@ -375,10 +395,14 @@
   color: white;
 }
 
-.contenido-unas {
+.contenido-unas, .contenido-pestanas, .contenido-depilacion {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+}
+
+/*------- CONTENIDO UNAS ----------*/
+.contenido-unas {
   margin-top: 30px;
 }
 .contenido-unas .titulo-unas {
@@ -432,8 +456,8 @@
 @media only screen and (min-width: 360px) and (max-width: 767px) {
   .contenido-unas {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
     font-size: 18px;
@@ -447,8 +471,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .contenido-unas {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
     font-size: 23px;
@@ -458,6 +482,12 @@
     align-items: center;
   }
 }
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
 .nav-color {
   background-color: #FFB2A6;
 }
@@ -479,6 +509,12 @@
 .footer-container .listas {
   list-style: none;
   color: white;
+}
+
+.contenido-pestanas, .contenido-depilacion, .contenido-unas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .ubicacion-contacto {
@@ -515,8 +551,8 @@
 @media only screen and (min-width: 360px) and (max-width: 767px) {
   .ubicacion-contacto {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
   }
   .ubicacion-contacto .titulo-contacto {
     font-size: 18px;
@@ -527,8 +563,8 @@
   }
   .ubicacion-contacto .formulario {
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+    flex-direction: column;
     padding-top: 20px;
     padding-bottom: 15px;
     margin: auto;
@@ -538,8 +574,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .ubicacion-contacto {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
   }
   .ubicacion-contacto .titulo-contacto {
     font-size: 18px;
@@ -556,10 +592,16 @@
   }
   .ubicacion-contacto .formulario {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    flex-direction: column;
   }
 }
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
 .nav-color {
   background-color: #FFB2A6;
 }
@@ -581,6 +623,12 @@
 .footer-container .listas {
   list-style: none;
   color: white;
+}
+
+.contenido-pestanas, .contenido-depilacion, .contenido-unas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .footer-container {
@@ -672,8 +720,8 @@
   .footer-container .redes .whatsapp-fijo {
     position: fixed;
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
+    flex-direction: column;
     align-items: flex-end;
   }
   .footer-container .sitios-contacto {

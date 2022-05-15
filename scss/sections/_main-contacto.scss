@@ -1,5 +1,6 @@
-@import "../general/reset.scss";
-@import "../general/style-general.scss";
+@import "../general/reset";
+@import "../general/style-general";
+@import "../general/variables";
 
 .ubicacion-contacto {
     display: flex;
@@ -42,10 +43,8 @@
 @media only screen and (min-width: 360px) and (max-width:767px){
 
     .ubicacion-contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
+        @include flex (flex, center, column);
+    
         .titulo-contacto {
             font-size: 18px;
             margin-bottom: 380px;
@@ -56,9 +55,7 @@
         }
 
         .formulario {
-            display: flex;
-            flex-direction: column;
-            justify-content:flex-start;
+            @include flex (flex, flex-start, column);
             padding-top: 20px;
             padding-bottom: 15px;
             margin: auto;
@@ -75,9 +72,8 @@
 @media only screen and (min-width:768px) and (max-width:1200px){
    
     .ubicacion-contacto {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex (flex, center, row);
+
 
         .titulo-contacto {
             font-size: 18px;
@@ -96,9 +92,7 @@
         }
 
         .formulario {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;    
+            @include flex (flex, space-around, column);  
         }
     }
 }

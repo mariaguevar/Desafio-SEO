@@ -1,12 +1,13 @@
-@import "../general/reset.scss";
-@import "../general/style-general.scss";
-@import "../general/variables.scss";
+@import "../general/reset";
+@import "../general/style-general";
+@import "../general/variables";
+
+
+/*--------- CONTENIDO DEPILACION---------*/
 
 .contenido-depilacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: $margin-top;
+    @extend %flex;
+    margin-top: map-get($main, margin-top);
 
     .titulo-depilacion {
         width: 90%;
@@ -14,31 +15,31 @@
         position: absolute;
         text-align: center;
         font-size: 28px;
-        color: $color-letra;
+        color: map-get($main, color-letra);
         margin: auto;
         padding: auto;
     }
 
     .depilacion-cera {
         text-align: left;
-        padding-left: 3%;
-        margin-top: $margin-top;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
 
         .cera {
-            color: $color-letra;
-            text-decoration: underline;
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
         }
     }
 
 
     .depilacion-definitiva {
         text-align: left;
-        padding-left: 3%;
-        margin-top: $margin-top;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
 
         .definitiva {
-            color: $color-letra;
-            text-decoration: underline;
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
         }
     }
 
@@ -49,11 +50,9 @@
 @media only screen and (min-width: 360px) and (max-width:767px) {
 
     .contenido-depilacion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (flex, center, column);
         margin-bottom: 20px;
-        padding: $padding;
+        padding: map-get($main, padding);
         font-size: 18px;
 
         .div-titulo {
@@ -70,11 +69,9 @@
 @media only screen and (min-width:768px) and (max-width:1200px) {
 
     .contenido-depilacion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (flex, center, column);
         margin-bottom: 20px;
-        padding: $padding;
+        padding: map-get($main, padding);
         font-size: 23px;
 
         .div-titulo {

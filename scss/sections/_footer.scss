@@ -1,5 +1,6 @@
-@import "../general/reset.scss";
-@import "../general/style-general.scss";
+@import "../general/reset";
+@import "../general/style-general";
+@import "../general/variables";
 
 .footer-container {
     width: 100%;
@@ -108,9 +109,7 @@
 
             .whatsapp-fijo {
                 position: fixed;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
+                @include flex (flex, flex-end, column);
                 align-items: flex-end;
             }    
         }

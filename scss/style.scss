@@ -5,8 +5,8 @@
 //style general
 @import "./general/style-general.scss";
 
-//variables 
-@import "./general/variables.scss";
+//Variables (mapas, extend, y mixin) 
+@import "./general/variables";
 
 //header
 @import "./sections/header";
